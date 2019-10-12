@@ -31,4 +31,5 @@ public class Rueda {
 	public void setEstado(String estado) {
 		this.estado = estado;
 	}
+
 }

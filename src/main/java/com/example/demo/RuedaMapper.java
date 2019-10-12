@@ -8,10 +8,10 @@ import org.mapstruct.Mappings;
 @Mapper(componentModel = "spring")
 public interface RuedaMapper {
 	@Mappings({
-		@Mapping(source="rueda.posicion", target="posicion"),
 		@Mapping(source="rueda.medida", target="medida"),
 		@Mapping(source="rueda.perfil", target="perfil"),
-		@Mapping(source="rueda.estado", target="estado")
+		@Mapping(source="rueda.estado", target="estado"),
+		@Mapping(constant="Todas", target="posicion")
 	})
 	public void cocheConRuedasToRueda(Rueda rueda, @MappingTarget cocheConRuedas cocheConRuedas);
 }

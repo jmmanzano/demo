@@ -17,7 +17,7 @@ public interface CocheMapper {
 	public cocheConRuedas cocheConRuedasToCoche(Coche coche, Rueda rueda);
 	
 	@AfterMapping
-	default void cocheConRuedasToRueda(Coche coche, Rueda rueda, @MappingTarget cocheConRuedas cocheConRuedas) {
+	default void mapeaRueda(Coche coche, Rueda rueda, @MappingTarget cocheConRuedas cocheConRuedas) {
 		RuedaMapper mapper = Mappers.getMapper(RuedaMapper.class);
 		mapper.cocheConRuedasToRueda(rueda, cocheConRuedas);
 	}

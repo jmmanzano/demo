@@ -7,6 +7,11 @@ public class cocheConRuedas {
 	 public String getModelo() {
 		return modelo;
 	}
+	@Override
+	public String toString() {
+		return "cocheConRuedas [modelo=" + modelo + ", marca=" + marca + ", posicion=" + posicion + ", medida=" + medida
+				+ ", perfil=" + perfil + ", estado=" + estado + "]";
+	}
 	public void setModelo(String modelo) {
 		this.modelo = modelo;
 	}
